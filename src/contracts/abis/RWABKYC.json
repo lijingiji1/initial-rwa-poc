@@ -1,0 +1,161 @@
+[
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_userAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isVerified",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_userAddress",
+        "type": "address"
+      }
+    ],
+    "name": "identity",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "governmentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "proofOfAddress",
+        "type": "string"
+      },
+      {
+        "internalType": "string[]",
+        "name": "additionalDocs",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string",
+        "name": "nationality",
+        "type": "string"
+      }
+    ],
+    "name": "submitKYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getKYCData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "enum RWABKYC.KYCStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "identityId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "idVerified",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addressVerified",
+            "type": "bool"
+          },
+          {
+            "internalType": "string",
+            "name": "governmentId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "proofOfAddress",
+            "type": "string"
+          },
+          {
+            "internalType": "string[]",
+            "name": "additionalDocs",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string",
+            "name": "nationality",
+            "type": "string"
+          },
+          {
+            "internalType": "enum RWABKYC.RiskLevel",
+            "name": "riskLevel",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "verificationDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastReviewDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "verifiedBy",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct RWABKYC.KYCData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
